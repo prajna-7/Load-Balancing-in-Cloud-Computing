@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Load Balancer Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .content-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+	    white-space: pre-line;
+	}
+    </style>
+</head>
+<body>
+	<h1>Load Balancer Results</h1>
+	<p>Chosen Server: {{ chosen_server }}</p>
+	<div class="content-container">
+	    <h2>Content from Chosen Server:</h2>
+	    <div>{{ content | safe }}</div> 
+        </div>
+        <p>Load of Server 1: {{ load_server1 }}</p>
+        <p>Load of Server 2: {{ load_server2 }}</p>
+</body>
+</html>
+
+
